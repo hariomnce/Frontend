@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XRPL Wallet</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>XRPL Wallet</h1>
+        <nav>
+            <ul>
+                <li><a href="#view-balances">View Balances</a></li>
+                <li><a href="#send-xrp">Send XRP</a></li>
+                <li><a href="#transaction-history">Transaction History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="view-balances" class="wallet-section">
+        <h2>View Balances</h2>
+        <input type="text" id="account-address" placeholder="Enter XRPL Account Address">
+        <button id="view-balance-button">View Balance</button>
+        <div id="balance-display"></div>
+    </section>
+
+    <section id="send-xrp" class="wallet-section">
+        <h2>Send XRP</h2>
+        <p>Your Account Address: <span id="sender-address">Your Address Here</span></p>
+        <input type="text" id="recipient-address" placeholder="Recipient's XRPL Account Address">
+        <input type="text" id="xrp-amount" placeholder="Amount (XRP)">
+        <button id="send-xrp-button">Send XRP</button>
+        <div id="send-xrp-confirmation"></div>
+    </section>
+
+    <section id="transaction-history" class="wallet-section">
+        <h2>Transaction History</h2>
+        <input type="text" id="history-account-address" placeholder="Enter XRPL Account Address">
+        <button id="view-history-button">View History</button>
+        <table id="history-table">
+            <!-- Transaction history will be displayed here -->
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 XRPL Wallet</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
